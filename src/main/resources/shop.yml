@@ -1,0 +1,54 @@
+#Nombre de la tienda, puedes colocar colores basicos de minecraft con "&" o hexadeciamal como "#ff0000"
+title_menu: Shop
+#Tamaño del Menu este se puede modificar en multiplos de 9 osea [9,18,27,36,45,54]
+slots: 54
+
+
+#Activa randon menu en "True" si solo quiere una tienda "false"
+ramdon_menu: true
+#Tiempo de cada cambio de Tienda
+intervalo: 60m
+
+#Shops Puedes crear las shops que desee si esta en "false" ramdon_menu este solo toma la primera shop
+
+#Nombre de la shop, solo es para que usted distinga sus shops
+shop1:
+  #Item cada item nueve deve tener un nombre de reconocimiento
+  sword:
+    #Slot donde estara el item en el menu
+    slot: 1
+    #Material del item en mayusculas
+    material: DIAMOND_SWORD
+    #Nombre del item se permite colores basicos de minecraft con "&" o hexadeciamal como "#ff0000"
+    name: '&bEspada Legendaria'
+    #Lore del item se permite colores basicos de minecraft con "&" o hexadeciamal como "#ff0000"
+    lore:
+      - '&7Una espada con poder oculto'
+    #Flags Puedes Ocultar Posiones, Encatamientos etc...
+    flags:
+      - HIDE_ENCHANTS
+    #Encantamientos solo son por vista no se aplican en los items
+    enchantments:
+      - DAMAGE_ALL:5
+      - FIRE_ASPECT:2
+    #Precio puede coloarse o no, si este esta en 0 no ejecutara nada, si esta en superior a 1 se ejecutan los comandos
+    price: 100
+    #Commandos Estos se ejecutan al comprar el item puedes agregar multiples comandos en forma de lista y de cualquier plugin para seleccionar al jugador quien compra el producto usa la variable %player%
+    commands:
+      - give %player% diamond_sword 1
+
+shop2:
+  sword:
+    slot: 1
+    material: DIAMOND_SWORD
+    name: '&bEspada Legendaria'
+    lore:
+      - '&7Una espada con poder oculto'
+    flags:
+      - HIDE_ENCHANTS
+    enchantments:
+      - DAMAGE_ALL:5
+      - FIRE_ASPECT:2
+    price: 0
+    commands:
+      - give %player% diamond_sword 1

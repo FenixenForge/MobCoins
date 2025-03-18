@@ -1,0 +1,37 @@
+#Puedes cambiar el prefix o nombre del plugin al gusto, se aceptan colores basicos de minecraft con "&" o hexadeciamal como "#ff0000"
+prefix: "#ffff6d&lMobCoins"
+#La cantidad de coins con las que inicia el jugador
+coins_default: 0
+
+
+use-mysql: false # Si es false, se usará SQLite local
+mysql:
+  host: localhost
+  port: 3306
+  database: mobcoins
+  username: user
+  password: password
+
+messages:
+  purchase_success_message: '&aHas comprado %item% &apor &e%price% &acoins.'
+  insufficient_funds:
+    '&cDinero insuficiente para comprar %item% &e(Precio: %price%
+    coins).'
+  mob_kill:
+    success: "&aHas recibido %coins% coins por matar un %mob%."
+
+
+#Puedes colocar multiples mobs cuantos quieras
+mobs:
+  #nombre para identificar al mob
+  creeper:
+    #Nombre del mob en mayusculas
+    mob: CREEPER
+    #Chance o probabilidad para que el mob suelte monedas
+    chance: 10
+    #Cantidad de monedas que dara el mob
+    coins: 1
+  zombie:
+    mob: ZOMBIE
+    chance: 20
+    coins: 2
