@@ -242,9 +242,6 @@ public class MobCoins
         MessageColor.Sender("&f- &a/mobcoins balance");
         MessageColor.Sender("&f- &a/mobcoins balance-top");
         MessageColor.Sender("&f- &a/mobcoins reload");
-        MessageColor.Sender("&f- &a/mobcoins version");
-        MessageColor.Sender("&f- &a/mobcoins support");
-        MessageColor.Sender("&f- &a/mobcoins credits");
         MessageColor.Sender("&f- &a/mobcoins help");
         MessageColor.Sender("#fb301f&l&m&m----------&r " + Variables.PlName + " Help " + "#fb301f&l&m----------");
     }
@@ -258,9 +255,6 @@ public class MobCoins
         MessageColor.Console("&f- &a/mobcoins balance");
         MessageColor.Console("&f- &a/mobcoins balance-top");
         MessageColor.Console("&f- &a/mobcoins reload");
-        MessageColor.Console("&f- &a/mobcoins version");
-        MessageColor.Console("&f- &a/mobcoins support");
-        MessageColor.Console("&f- &a/mobcoins credits");
         MessageColor.Console("&f- &a/mobcoins help");
         MessageColor.Console("#fb301f&l&m----------&r&l " + Variables.PlName + " Help " + "#fb301f&l&m----------");
     }
